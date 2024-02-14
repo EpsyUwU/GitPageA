@@ -1,9 +1,10 @@
 import { useState, useEffect } from 'react';
 import HeartImage from '../src/assets/heart.png';
+import Formidable from '../src/assets/formidable.mp3';
 
 const LoveLetter = () => {
   const [showLetter, setShowLetter] = useState(false);
-  let audio = new Audio('../src/assets/formidable.mp3');
+  let audio = new Audio(Formidable);
 
   const handleLetterClick = () => {
     setShowLetter(!showLetter);
